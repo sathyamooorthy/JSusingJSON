@@ -1,0 +1,56 @@
+var list = [
+    {
+        name:"Sat",
+        job : "Engineer",
+        age:25
+    },
+    {
+        name:"Raj",
+        job : "teacher",  
+        age:21
+    },
+    {
+        name:"Bala",
+        job : "Doctor",
+        age:25
+    },
+    {
+        name:"John",
+        job : "teacher",
+        age:16
+    },
+    {
+        name:"Arun",
+        job : "teacher",
+        age:30
+    },
+    {
+        name:"Vicky",
+        job : "Engineer",
+        age:34
+    },
+    {
+        name:"Raj",
+        job : "Doctor",
+        age:45
+    },
+    {
+        name:"Jack",
+        job : "teacher",
+        age:26
+    },
+];
+
+// This find returns name which starts with A
+var find = list.filter((names)=>names.name.startsWith("J"));
+console.log(find);
+
+// this find returns name which has a in that character 
+var find = list.filter((names)=>names.job.includes("teacher"));
+console.log(find);  
+
+// returns age above 20
+var age = list.filter((ages)=>ages.age>20);
+console.log(age);
+
+
